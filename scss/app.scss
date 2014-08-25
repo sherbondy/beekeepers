@@ -5,6 +5,31 @@ body {
   background: #fff59d;
 }
 
+#nav a:hover {
+  color: #000;
+  background: #fff;
+}
+
+hr {
+  background-color: #fff;
+}
+
+p a {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+#map {
+  margin-bottom: .9375rem;
+}
+
+img.profile {
+  margin-right: .9375rem;
+}
+
 // Or selectively include components
 // @import
 //   "foundation/components/accordion",
