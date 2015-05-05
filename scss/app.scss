@@ -22,6 +22,17 @@ p a {
   }
 }
 
+#member-list h5 {
+  max-width: 192px;
+  height: 1.1em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#member-list h5.name {
+  font-weight: bold;
+}
+
 #map {
   margin-bottom: .9375rem;
 }
@@ -29,6 +40,8 @@ p a {
 img.profile {
   margin-right: .9375rem;
 }
+
+
 
 // Or selectively include components
 // @import
