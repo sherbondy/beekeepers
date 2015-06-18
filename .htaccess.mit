@@ -1,0 +1,2 @@
+Redirect 301 /beekeepers/web_scripts/ http://beekeepers.mit.edu
+Redirect 301 /beekeepers/ http://beekeepers.mit.edu
