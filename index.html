@@ -15,6 +15,25 @@
           href="https://www.google.com/calendar/feeds/prerikt5kh93mdhkjvffnecs0s%40group.calendar.google.com/public/basic" />
 
     <script src="bower_components/modernizr/modernizr.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+        $('a[href^="#"]').on('click',function (e) {
+         e.preventDefault();
+
+         var target = this.hash;
+         var $target = $(target);
+
+        $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+         }, 900, 'swing', function () {
+          window.location.hash = target;
+        });
+      });
+    });
+    </script>
     <link rel="icon" 
       type="image/png" 
       href="img/favicon">
@@ -32,8 +51,8 @@
     <div class="large-8 columns">
       <ul class="button-group right" id="nav">
         <li><a href="#mission" class="button">Mission</a></li>
+        <li><a href="#photos" class="button">Photos</a></li>
         <li><a href="#events" class="button">Events</a></li>
-        <li><a href="#projects" class="button">Projects</a></li>
         <li><a href="#members" class="button">Members</a></li>
         <li><a href="http://beekeepers.hackpad.com" class="button">Wiki</a></li>
       </ul>
@@ -106,7 +125,7 @@
     <div class="large-12 columns">
       <hr>
       <div class="row">
-        <h2 id="events" class="columns">Facebook Photos</h2>
+        <h2 id="photos" class="columns">Facebook Photos</h2>
 
         <div class="large-6 columns">
           <div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-post" data-href="https://www.facebook.com/media/set/?set=a.950722718300738.1073741828.950719494967727&amp;type=3" data-width="100%"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/media/set/?set=a.950722718300738.1073741828.950719494967727&amp;type=3">Posted by <a href="https://www.facebook.com/mitbeekeepers">MIT Beekeepers</a> on&nbsp;<a href="https://www.facebook.com/media/set/?set=a.950722718300738.1073741828.950719494967727&amp;type=3">Monday, July 6, 2015</a></blockquote></div></div>
@@ -117,7 +136,7 @@
       </div>
     </div>
   </div>
-  
+
   <div class="row">
     <div class="large-12 columns">
       <hr>
@@ -257,11 +276,11 @@
         </div>
         <div class="large-6 columns">
           <ul class="inline-list right">
-            <li><a href="#mission">Mission</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#members">Members</a></li>
-            <li><a href="http://beekeepers.hackpad.com">Wiki</a></li>
+            <li><a href="#mission" class="button">Mission</a></li>
+        <li><a href="#photos" class="button">Photos</a></li>
+        <li><a href="#events" class="button">Events</a></li>
+        <li><a href="#members" class="button">Members</a></li>
+        <li><a href="http://beekeepers.hackpad.com" class="button">Wiki</a></li>
           </ul>
         </div>
       </div>
