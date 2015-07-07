@@ -188,6 +188,8 @@ select {
   margin: 0 auto;
   max-width: 62.5rem;
   width: 100%;
+  box-shadow: 0 0 20px 0 #fff59d;
+  background-color: #fff59d;
 }
 /* line 172, ../bower_components/foundation/scss/foundation/components/_global.scss */
 .row:before, .row:after {
@@ -7956,7 +7958,8 @@ h6 {
 /* line 278, ../bower_components/foundation/scss/foundation/components/_type.scss */
 hr {
   border: solid #DDDDDD;
-  border-width: 1px 0 0;
+  border: solid #7FDA2B; /*added by Jonathan */
+  border-width: 2px 0 0;
   clear: both;
   height: 0;
   margin: 1.25rem 0 1.1875rem;
@@ -9441,7 +9444,7 @@ th.hide-for-touch {
 }
 /* line 4, ../scss/app.scss */
 body {
-  background: #fff59d;
+  background: #fff;
 }
 
 /* line 8, ../scss/app.scss */
